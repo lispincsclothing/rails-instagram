@@ -50,6 +50,12 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # Diagrama models in UML
+  gem 'railroady'
+
+  # Include rake for travis ci
+  gem 'rake'
 end
 
 group :test do
