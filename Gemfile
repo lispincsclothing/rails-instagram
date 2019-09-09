@@ -8,7 +8,7 @@ gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'paperclip'
 gem 'aws-sdk'
-gem 'devise'
+gem 'devise', '>= 4.7.1'
 gem 'omniauth-facebook'
 # Use postgresql as the database for Active Record
 gem 'pg'
