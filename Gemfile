@@ -2,18 +2,18 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0.rc3'
+gem 'rails', '4.2.0'
 gem 'bootstrap-sass'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'paperclip'
-gem 'aws-sdk'
-gem 'devise'
+gem 'aws-sdk', '>= 1.60.1'
+gem 'devise', '>= 3.4.1'
 gem 'omniauth-facebook'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.1'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -22,9 +22,9 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '>= 2.5.3'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -46,7 +46,7 @@ group :development, :test do
   gem 'byebug'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 2.0', '>= 2.0.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -59,10 +59,10 @@ group :development, :test do
 end
 
 group :test do
-  gem 'rspec-rails'
-  gem 'capybara'
+  gem 'rspec-rails', '>= 3.1.0'
+  gem 'capybara', '>= 2.4.4'
   gem 'rspec-collection_matchers'
-  gem 'poltergeist'
+  gem 'poltergeist', '>= 1.5.1'
   gem 'database_cleaner'
   gem "codeclimate-test-reporter", require: nil
 end
